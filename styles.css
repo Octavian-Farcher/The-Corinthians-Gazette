@@ -1,0 +1,168 @@
+body{
+    background-color: #F5F2E8;
+    max-width : 960px;
+    margin: auto;
+}
+.whole-content{
+    justify-content: center;
+}
+/* Navbar Section */
+ .navbar ul{
+    padding: 15px;
+    list-style-type:none;
+    display:flex;
+    justify-content: space-between;
+    font-weight: 100;
+    font-family:'Newsreader', serif ;
+
+    
+}  
+.navbar{
+    border: 2px solid black;
+    
+}
+.navbar a{
+    color:black;
+    text-decoration: none;
+}
+.navbar li :hover{
+    font-weight: bold;
+}
+
+/* Title & author + date */
+.dateandauthor{
+    display : flex;
+    border-top: 2px solid black;
+    border-bottom:2px solid black;
+    justify-content: space-between;
+    color:black;
+    font-family:'Newsreader', serif;
+    font-weight: 50;
+}
+
+
+.title{
+   text-align: center; 
+   border-top: 2px solid black;
+   font-family:'Newsreader', serif;
+   border-bottom: 2px solid black ;
+
+}
+
+/* Article + Image big */
+.article-big{
+    display: flex;
+    height: auto;
+    width: auto;
+    justify-content:space-around,center;
+    padding-top:30px;
+    padding-bottom: 0px;
+    border-bottom: 2px solid black;
+    padding-bottom: 40PX;
+}
+/* Article - Image */
+.article-image{
+    justify-content: center;
+}
+ /* Article text */
+.article-text{
+margin: -15px 30px;
+font-family:'Newsreader', serif;
+}
+
+.date-of-article {
+   font-size: 16px;
+   font-weight: bolder;
+   color:black;
+   padding-top: 20px;
+   font-family:'Newsreader', serif ;
+}
+
+.text-of-article{
+    font-size:16px;
+    color:#3b3a30;
+    font-family:'Newsreader', serif;
+    
+
+}
+
+
+.article-conducted{
+    padding-top: 40px;
+}
+/* Article medium page */
+.article-medium{
+    display: flex;
+    flex-direction: row-reverse;
+    margin-top: 20px;
+    padding-bottom: 20px;
+    border-bottom: 2px solid black;
+}
+
+.image-medium{
+    margin: 0 20px 0 20px
+}
+
+
+.article-bot{
+    display:flex;
+}
+.article-text-bottom{
+    padding: 20px 10px;
+}
+
+@media (max-width : 500px){
+ /* navbar */
+ 
+.navbar li :hover{
+  color:black;
+  font-weight: 900;
+}
+
+    /* images in general */
+    img{
+        max-width: 300px;
+        border-radius: 20%;
+        }
+/* First article image */
+    .article-image{
+        display: flex;
+        justify-content: center;
+       
+    }
+
+  /* First article */
+
+  .article-big{
+    display: block;
+}
+.text-of-article{
+    padding-bottom: 20px;
+}
+/* the second article */
+.article-medium{
+    display: block;
+    justify-content: center;
+}
+
+.article-text-title{
+    padding-left: 30px;
+    padding-right: 30px;
+}
+.image-medium{
+    display: flex;
+    justify-content: center;
+}
+
+/* The third article */
+.article-text-bottom{
+    margin: 3px 3px 3px 0px;
+    
+    border-radius: 20%;
+    border: 1px solid black;
+}
+
+}
+
+
+
