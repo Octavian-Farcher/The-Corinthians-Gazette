@@ -129,10 +129,6 @@ body{
 }
 
 @media (max-width : 600px){
-/* title */
-.title1-trans::after{
-    content: "The Corinthians Gazette";
-}
     /* Hamburger-menu */
 
 
