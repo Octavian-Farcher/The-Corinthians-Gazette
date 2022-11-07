@@ -12,6 +12,7 @@
       href="https://fonts.googleapis.com/css2?family=Island+Moments&family=Montserrat&family=Newsreader:ital@1&family=Poppins&family=Roboto:ital,wght@0,400;1,300;1,400&display=swap"
       rel="stylesheet"
     />
+    <script src="./brain.js"></script>
   </head>
   <body>
     <div class="whole-content">
@@ -26,11 +27,18 @@
           </div>
         </div>
         <div class="title">
-          <h1>NEWSPAPER</h1>
+          <h1 class="title1" id="title1" onclick="home()">
+            The corinthians gazette
+          </h1>
+          <div class="hamburger-menu" id="hamburger" onclick="toggleNavbar()">
+            <div class="hamburger-level" id="line1"></div>
+            <div class="hamburger-level" id="line2"></div>
+            <div class="hamburger-level" id="line-dissapear"></div>
+          </div>
         </div>
       </div>
 
-      <div class="navbar">
+      <div class="navbar" id="nav-bar">
         <ul>
           <li><a href="#">Home</a></li>
           <li><a href="#">Local News</a></li>
