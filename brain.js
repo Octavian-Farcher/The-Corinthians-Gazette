@@ -7,7 +7,7 @@ var closeMenu = "";
 var isNavbar = false;
  function toggleNavbar()  
  {
-    isNavbar = !isNavbar ;
+    isNavbar = !isNavbar;
     if(isNavbar == true){
       var open = document.getElementById("hamburger")
       open.addEventListener("click",() =>{
