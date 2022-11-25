@@ -75,8 +75,6 @@ body{
     
 }
 .navbar li :hover{
-    /* font-weight: 900; */
-    /* text-decoration:wavy */
     box-shadow: inset 200px 0 0 0 black;
     color: white;
 }
@@ -136,7 +134,9 @@ body{
 }
 
 @media (max-width : 600px){
-   
+   .title1{
+    align-items: center;
+   }
   
     /* Hamburger-menu */
 
@@ -159,7 +159,7 @@ body{
     margin-bottom : 3px;  /* aici setez distanta dintre liniute prin margin*/ 
     border-radius: 20%;
     width: 30px;
-    transition-duration: 0.5s;
+    transition-duration: .25s;
     
 }
 /* The closing X/menu */
