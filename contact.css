@@ -78,8 +78,8 @@ body{
     max-height: 1600vw;
     display: flex;
     flex-direction: row;
-    background: #b2b2b2;
-    border-radius: 5%;
+    background:var(--secondary-background-color);
+    border-radius:2% ;
     
 } 
 /* first container form */
@@ -109,7 +109,7 @@ body{
     padding: 0px 25px 25px 25px;
 }
 .input-area input{
-    padding: 10px;
+    padding: 5px;
     border-radius: 5px;
     border: 3px solid black;
 }
@@ -119,14 +119,14 @@ body{
 .input-area input,label{
     width: 50%;
     display: flex;
-    margin-left: 10px;
+    margin-left: 5px;
     flex-direction: column ;
     border-radius: 5px;
     font-family:'Newsreader', serif; ;
     
 }
 .input-area textarea{
-    margin-left: 10px;
+    margin-left: 5px;
     border-radius: 5px;
     min-height: 30vw ;
     width: 80%;
@@ -138,7 +138,7 @@ body{
     display: flex;
     flex-direction: column;
     width: 50%;
-    padding-bottom: 10px;
+    padding-bottom: 5px;
 }
 
 
@@ -151,11 +151,12 @@ body{
 }
 /* button */
 button{
-    background-color: var(--secondary-background-color);   /* modify the button to look similar to*/
+    background-color: var(black);   /* modify the button to look similar to*/
     width: 30vw;
     height: 5vw;
-    border : none;
-    margin-left: 10px;  
+    border : 1px black solid;
+    border-radius: 1em;
+    margin-left: 5px;  
     color: black;
     box-shadow: inset 0 0 0 0 black;
     margin: 0 1;
@@ -163,7 +164,7 @@ button{
     transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
 }
 .submit:hover{
-    box-shadow: inset 30vw 0 0 0 black;
+    box-shadow: inset 30vw 0 0 0 white;
     color: white;
 
 }
@@ -180,15 +181,19 @@ button{
 /* list */
 .container-secondary {
 padding-right: 8vw;
+width: 100%;
 }
 .container-secondary ul{
     padding-top: 1vw;
     list-style-type:none;
-    display: block;
+    display: flex;
+    flex-direction: column-reverse;
+    
 }
 
 .container-secondary li{
-    font-size: 1.5vw;
+    font-size: 5px;
+    width: 100%;
     display: flex;
     flex-direction: row;
     text-decoration-line: none;
@@ -197,14 +202,16 @@ padding-right: 8vw;
 }
 /* a decoration for links */
 .container-secondary li a{
+width: 100%;
 text-decoration:none ;
 color: black;
-font-size: var(--page-font-size);
+font-size: 1.5vw;
 font-family: var(--page-font);
 
 }
 .container-secondary li a:hover{
     font-weight: 900;
+    
     
 }
 /* list markers */
@@ -276,7 +283,7 @@ font-family: var(--page-font);
 /* Mobile version */
 @media (  max-width:650px ){
 .container-input{
-    top: 13%;
+    top: 25%;
     width: 100%;
 }
 .container-primary{
@@ -292,11 +299,21 @@ font-family: var(--page-font);
 .container-secondary ul{
     padding: 0;
     margin: 0;
-    width:50%;
+    width:100%;
     justify-content: center;
 }
+/* hero img container  */
+.hero{
+    margin-bottom: -5px;
+
+}
 .container-secondary li{
-    display: none;
+    position: relative;
+    left:10vw;
+    bottom: 10vw;
+    font-size: 5px;
+    display: flex;
+    flex-direction: column;
 }
 .hero{
     padding-left: 7vw;
@@ -307,7 +324,17 @@ font-family: var(--page-font);
     display:flex
 }
 }
-
+@media (max-width:450px){
+   .location img {
+        padding-right: 5px;
+    }
+    .email img{
+        padding-right: 5px;
+    }
+    .phone img{
+        padding-right: 5px;
+    }
+}
 
 
 
